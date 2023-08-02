@@ -2,7 +2,9 @@
 Group 4 CEPARCO
 
 Source Code = https://colab.research.google.com/drive/1YVG0DSg6NhhWLuIsCbS56z15khkSuyc5?usp=sharing
+
 Demo Video Recording = https://drive.google.com/drive/folders/1S41WUmnvUNkFyUV93NDbA9KbjSM86qc7?usp=sharing
+
 Test Cases = https://docs.google.com/document/d/1mAK8bgEqX4NlCTVWy7JyZEwDsjBSkpTJyHgUoo-3OHE/edit
 
 ## Parallel Algorithms
