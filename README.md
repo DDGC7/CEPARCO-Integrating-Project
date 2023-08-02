@@ -40,15 +40,8 @@ The function requests that the specified data (both d_string and d_pattern) be b
 The prefetch operation is a parallel task handled by the GPU's memory controller, allowing data to be brought to the GPU before it is actually used, thus reducing data transfer latency.
 
 ## Comparison of Execution Time (Parallel Vs. Sequential)
-String = 100K
-![image](https://github.com/DDGC7/CEPARCO-Integrating-Project/assets/99391788/28397849-d0e0-4c7f-a00e-6a807d03a187)
+![image](https://github.com/DDGC7/CEPARCO-Integrating-Project/assets/99391788/80cbfa9b-7f84-4d95-a901-1386be889d6e)
 
-String = 50K
-![image](https://github.com/DDGC7/CEPARCO-Integrating-Project/assets/99391788/4cc697dc-317c-449e-9676-6bb257989ea5)
-
-
-String = 10K
-![image](https://github.com/DDGC7/CEPARCO-Integrating-Project/assets/99391788/3fcc1a20-e636-44ce-a7af-a19addd2d958)
 
 ## Analysis and Results Discussion
 Based on the output of our project, we weren't able to successfully parallelize the search pattern kernel. This led to the execution time of our CUDA implementation to be much slower compared to the C (sequential) implementation. In addition to that, the parallelization of the KMP pre-processing table wasn't successful as well, as the execution times were slower compared to the C implementation. For string lengths 100K and 50K, the Boyer-Moore preprocessing table execution times were faster compared to the C implementation. However, that is not the case when it came to string length being equal to 10K.
